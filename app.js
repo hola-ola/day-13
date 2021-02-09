@@ -1,18 +1,11 @@
-let x = 150;
-let y = 150;
+let width = 500;
+let height = 500;
+const game = new Game();
+
 function draw() {
-  console.log(`HELLO FROM DRAW`);
-  clear();
-  background("cyan");
-  rect(x, y, 50, 150);
-}
-4;
-function setup() {
-  console.log(`HELLO FROM SETUP`);
-  createCanvas(400, 400);
+  game.draw();
 }
 
-setInterval(() => {
-  x -= 35;
-  y += 35;
-}, 500);
+function setup() {
+  createCanvas(width, height);
+}
